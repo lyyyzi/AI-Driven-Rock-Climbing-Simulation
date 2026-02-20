@@ -143,13 +143,6 @@ This system can be used for:
 
 ---
 
-## Author
-
-Yicheng Lin
-Master of Science in Computer Science
-Visual Computing
-
----
 
 ## Notes
 
