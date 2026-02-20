@@ -143,6 +143,12 @@ This system can be used for:
 
 ---
 
+## Technical Report
+
+For detailed implementation, architecture, and results:
+
+[Technical Report](docs/AI_Rock_Climbing_Technical_Report.pdf)
+
 
 ## Notes
 
