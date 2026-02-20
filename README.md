@@ -1,0 +1,158 @@
+# AI-Driven Rock Climbing Motion Simulation
+
+This project implements a diffusion-based human motion generation system for rock climbing simulation. The model learns climbing motion patterns from motion capture data and generates realistic climbing sequences, which can be visualized and integrated into simulation environments such as Isaac Sim or Blender.
+
+This work was developed as part of a visual computing and machine learning project focused on AI-driven character animation and motion synthesis.
+
+---
+
+## Overview
+
+The system consists of three main components:
+
+1. Model training using diffusion-based motion generation
+2. Motion inference and sampling from trained model
+3. Visualization of generated climbing motion
+
+The trained model learns to generate realistic climbing sequences by reversing a diffusion process that progressively removes noise from motion representations.
+
+---
+
+## Key Features
+
+* Diffusion-based human motion generation
+* Training pipeline for learning motion representations
+* Motion sampling and inference pipeline
+* Motion visualization using skeleton rendering
+* Modular and extensible architecture
+* Compatible with simulation and animation pipelines
+
+---
+
+## Repository Structure
+
+```
+generator/
+│
+├── train.py                 # Main training script
+├── gen_motion.py           # Motion generation using trained model
+├── char_model_visual.py    # Neural network model definition
+├── char_model_visual_eval.py # Evaluation and visualization model
+│
+├── diffusion/              # Diffusion model implementation
+├── learning/               # Training logic and optimization
+├── cfg/                    # Training configuration files
+├── data/                   # Motion dataset
+├── util/                   # Utility functions
+│
+motion_viewer/
+│
+├── motion_viewer.py       # Motion visualization tool
+├── data/motion/           # Generated motion files
+```
+
+---
+
+## How It Works
+
+### Training Phase
+
+The model is trained using motion capture data representing human climbing movements.
+
+```
+python generator/train.py
+```
+
+This trains a diffusion model to learn motion patterns and outputs trained model weights.
+
+---
+
+### Motion Generation Phase
+
+After training, new climbing motions can be generated using:
+
+```
+python generator/gen_motion.py
+```
+
+This produces motion sequences stored as serialized motion data.
+
+---
+
+### Visualization Phase
+
+Generated motion can be visualized using:
+
+```
+python motion_viewer/motion_viewer.py
+```
+
+This renders animated climbing motion using skeletal representation.
+
+---
+
+## Diffusion Model Approach
+
+This project uses a diffusion-based generative model to synthesize motion.
+
+Training process:
+
+* Add noise to motion data progressively
+* Train neural network to reverse noise process
+* Learn motion distribution
+
+Inference process:
+
+* Start from random noise
+* Iteratively denoise
+* Produce realistic climbing motion
+
+This approach enables stable and high-quality motion generation.
+
+---
+
+## Technical Stack
+
+* Python
+* PyTorch
+* Diffusion models
+* Machine learning
+* Motion synthesis
+* Scientific computing libraries
+
+---
+
+## Applications
+
+This system can be used for:
+
+* Character animation
+* Robotics simulation
+* Game development
+* Virtual environments
+* Motion synthesis research
+
+---
+
+## Author
+
+Yicheng Lin
+Master of Science in Computer Science
+Visual Computing
+
+---
+
+## Notes
+
+This repository contains my personal maintained version of a collaborative academic project. My contributions include working with the motion generation pipeline, model integration, and visualization components.
+
+---
+
+## Future Improvements
+
+* Integration with Isaac Sim
+* Real-time motion generation
+* Reinforcement learning integration
+* Improved motion realism
+
+---
