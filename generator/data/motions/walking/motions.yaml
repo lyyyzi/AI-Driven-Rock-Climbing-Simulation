@@ -1,0 +1,7 @@
+motions:
+- file: data/motions/walking/dm_beyond_walking_000.pkl
+  weight: 1.0
+- file: data/motions/walking/dm_beyond_walking_001.pkl
+  weight: 1.0
+- file: data/motions/walking/dm_beyond_walking_002.pkl
+  weight: 1.0

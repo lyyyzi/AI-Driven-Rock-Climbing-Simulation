@@ -1,0 +1,3 @@
+motions:
+- file: data/motions/climb/retarget3.pkl
+  weight: 1.0

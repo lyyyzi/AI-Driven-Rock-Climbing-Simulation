@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "init",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "init.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "train",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "train.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "gen_motion",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "gen_motion.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "convert_bvh_to_pkl.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "convert_bvh_to_pkl.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "char_model_visual",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "char_model_visual.py",
+            "console": "integratedTerminal"
+        },
+    ]
+}

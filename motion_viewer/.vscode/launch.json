@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "RESOURCE_NAME": "IsaacSim",
+                "CARB_APP_PATH": "C:\\isaac-sim/kit",
+                "ISAAC_PATH": "C:\\isaac-sim",
+                "EXP_PATH": "C:\\isaac-sim/apps",
+                "PYTHONPATH": "C:\\isaac-sim/site"
+            },
+            "python": "C:\\isaac-sim/kit/python/python.exe",
+        },
+        {
+            "name": "Python: Attach (windows-x86_64/linux-x86_64)",
+            "type": "python",
+            "request": "attach",
+            "port": 3000,
+            "host": "localhost"
+        },
+        {
+            "name": "(windows-x86_64) isaac-sim [release]",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "C:\\isaac-sim/kit/kit.exe",
+            "args": ["C:\\isaac-sim/apps/isaacsim.exp.full.kit",
+                "--ext-folder", "C:\\isaac-sim/apps"],
+            "stopAtEntry": false,
+            "cwd": "C:\\isaac-sim",
+            "environment": [],
+            "externalConsole": false,
+            "internalConsoleOptions": "openOnSessionStart",
+        },
+    ]
+}
